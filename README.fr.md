@@ -2,28 +2,70 @@
 
 *[English version](README.md)*
 
-GameMetrik est une application macOS native, avec un compagnon iPhone, qui rassemble les chiffres d'un petit studio de jeux : ventes des boutiques, revenus publicitaires, joueurs actifs, gameplay et rétention. Elle lit chaque fournisseur directement depuis ton Mac. Il n'y a ni serveur, ni compte à créer, ni télémétrie.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/overview-dark.png">
+  <img src="docs/screenshots/overview-light.png" alt="GameMetrik : la vue d'ensemble du studio avec les installations, les joueurs actifs par jour et les revenus par source sur 30 jours" width="900">
+</picture>
 
-Elle a été écrite par un développeur indépendant pour ses propres jeux, puis ouverte. Lis la section suivante avant de prévoir de l'utiliser pour les tiens.
+App macOS native, avec un compagnon iPhone, qui rassemble les chiffres d'un petit studio de jeux : ventes des boutiques,
+revenus publicitaires, **installations**, **joueurs actifs**, gameplay et rétention. Elle lit chaque fournisseur
+directement depuis ton Mac et affiche, près de chaque chiffre, d'où il vient et ce qu'il couvre.
 
-## À quoi t'attendre
+Sources : **App Store Connect**, **Google Play**, **AdMob**, **Firebase/Firestore** et **Supabase**.
 
-- **L'interface est en français**, comme les guides détaillés. Les commentaires du code sont en anglais.
-- **Un mode démonstration est fourni.** Il montre tous les écrans avec des données fictives et se compile sans compte développeur Apple.
-- **Les parties génériques fonctionnent pour tout studio** : rapports de ventes App Store Connect, rapports Google Play, revenus AdMob et catalogue de jeux conservé dans Firestore.
-- **Certains rapports sont propres aux deux jeux de l'auteur.** Ils figurent ici sous des noms d'emprunt, Aurora Grove et Ballpark, et appellent des fonctions d'analyse qui n'existent que dans les projets Supabase de ces jeux. Considère-les comme des exemples complets d'un contrat de rapport, de sa validation et de son affichage.
+Elle a été écrite par un développeur indépendant pour ses propres jeux, puis ouverte. Ses deux jeux figurent ici sous
+des noms d'emprunt, Aurora Grove et Ballpark.
 
-## Ce que fait l'app
+## Principes
 
-- Vue d'ensemble du studio : installations, joueurs actifs, revenus par devise, avec la couverture de chaque source affichée près des chiffres.
-- Pages par jeu : acquisition, gameplay, parcours des joueurs, rétention, monétisation, avis.
-- Synchronisation manuelle avec un cache local chiffré : une journée définitive n'est pas relue.
-- Export CSV, et un dossier facultatif de tableaux agrégés destiné à un assistant IA.
-- Une donnée manquante reste manquante : une source en échec est indiquée comme indisponible, jamais comme zéro, et les devises ne sont pas additionnées.
+- **Tout en local.** Ni serveur, ni compte à créer, ni télémétrie. Le seul trafic réseau va vers les fournisseurs que tu connectes.
+- **Honnête.** Une source en échec est indiquée comme indisponible, jamais comme zéro. Les devises ne sont jamais additionnées.
+- **Verrouillée par défaut.** Les identifiants restent dans le trousseau, derrière Touch ID ou ton mot de passe. L'app
+  démarre verrouillée, et se verrouille à la veille, au verrouillage de l'écran et après cinq minutes sans activité.
+- **Native.** SwiftUI, AppKit et Swift Charts. Aucune dépendance hors des SDK Apple : ni Node, ni vue web, ni serveur local.
+- **Rien de brut sur le disque.** Les parties et les profils des joueurs restent en mémoire. Le cache ne contient que
+  des agrégats, chiffrés en AES-256-GCM.
+- **Interface en français**, comme les guides détaillés. Les commentaires du code sont en anglais.
+
+## Fonctions
+
+- Vue d'ensemble du studio : installations, nouveaux joueurs, joueurs actifs par jour, revenus par devise et par source
+- Pages par jeu : acquisition, gameplay, joueurs, avis, parcours des joueurs, monétisation, activité en direct
+- Inspecteur de journée : une journée à travers toutes les sources
+- Couverture près des chiffres : population, période, fuseau horaire, ce qui n'est pas collecté
+- Synchronisation manuelle avec un cache chiffré : une journée définitive n'est pas relue
+- Export CSV et JSON des tableaux complets
+- Dossier facultatif de tableaux agrégés pour un assistant IA, qui peut aussi demander une synchronisation
+- Mode démonstration avec des données fictives, séparé de l'espace réel
+- Compagnon iPhone qui partage le même module, connecté par un fichier de transfert chiffré et de courte durée
+
+## Captures d'écran
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/insights-dark.png">
+    <img src="docs/screenshots/insights-light.png" alt="Page d'activité d'un jeu dans GameMetrik : joueurs en jeu maintenant, par mode et par version, et pics quotidiens de présence" width="900">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/gameplay-dark.png">
+    <img src="docs/screenshots/gameplay-light.png" alt="Page gameplay d'un jeu dans GameMetrik : joueurs actifs, parties terminées, durée moyenne, modes de jeu et difficultés" width="900">
+  </picture>
+</p>
+
+<p align="center"><sub>Rendu à partir des vues de l'app, avec des données de démonstration.</sub></p>
+
+## Prérequis
+
+macOS 14 ou ultérieur, et Xcode 16 ou ultérieur (Swift 6) pour compiler. L'app iPhone demande iOS 17 ou ultérieur.
+
+Il n'y a pas encore de version à télécharger : GameMetrik se compile depuis les sources.
 
 ## Essayer la démonstration
 
-Il faut un Mac sous macOS 14 ou ultérieur et Xcode 16 ou ultérieur (Swift 6).
+Sans compte développeur Apple.
 
 ```sh
 git clone https://github.com/Axxxxpirine/GameMetrik.git
@@ -34,44 +76,37 @@ open "NativeApp/dist/GameMetrik Demo.app"
 
 Clique **Déverrouiller** et confirme avec Touch ID ou le mot de passe du Mac. L'app s'ouvre sur les données de démonstration.
 
-Le paquet de démonstration est signé ad hoc, pour ton Mac uniquement. Il n'a pas de groupe de trousseau et ne peut donc enregistrer aucune connexion : il affiche des données fictives, rien d'autre.
+Le paquet de démonstration est signé ad hoc, pour ton Mac uniquement. Il n'a pas de groupe de trousseau et ne peut donc
+enregistrer aucune connexion : il affiche des données fictives, rien d'autre.
 
-## Compiler pour tes propres données
-
-Les connexions réelles sont rangées dans le trousseau Data Protection, dans un groupe que macOS n'accorde qu'à une app signée avec un profil de provisionnement. Il te faut donc :
-
-1. Une adhésion Apple Developer.
-2. Un identifiant d'app `ch.gamemetrik.native` dans ton équipe (ou le tien, remplacé partout dans les sources), avec un profil de provisionnement macOS qui inclut son groupe de trousseau.
-3. L'identité de signature dans ton trousseau.
+## Compiler
 
 ```sh
-./NativeApp/scripts/build.sh
+swift test --package-path NativeApp                  # tests : fixtures synthétiques, aucun réseau
+GAMEMETRIK_DEMO_BUILD=1 ./NativeApp/scripts/build.sh # NativeApp/dist/GameMetrik Demo.app, signature ad hoc
+./NativeApp/scripts/build.sh                         # NativeApp/dist/GameMetrik Native.app, ton identité et ton profil Apple
+./NativeApp/scripts/notarize.sh PROFIL               # notarisation d'un paquet Developer ID
+./iOSApp/scripts/build.sh                            # app iPhone pour le simulateur (demande XcodeGen)
 ```
 
-Le script trouve seul une identité et un profil compatibles. Pour les choisir explicitement, définis `GAMEMETRIK_SIGNING_IDENTITY` et `GAMEMETRIK_SIGNING_PROFILE`. Il ne revient jamais à une signature ad hoc, sauf si tu demandes le paquet de démonstration.
+Les connexions réelles sont rangées dans le trousseau Data Protection, dans un groupe que macOS n'accorde qu'à une app
+signée avec un profil de provisionnement. Le paquet complet demande donc une adhésion Apple Developer, un identifiant
+d'app `ch.gamemetrik.native` dans ton équipe (ou le tien, remplacé partout dans les sources) avec un profil macOS qui
+inclut son groupe de trousseau, et l'identité de signature dans ton trousseau. Le script les trouve seul ;
+`GAMEMETRIK_SIGNING_IDENTITY` et `GAMEMETRIK_SIGNING_PROFILE` permettent de les choisir. Il ne revient jamais à une
+signature ad hoc, sauf si tu demandes le paquet de démonstration.
 
-Suis ensuite le guide de connexion : [NativeApp/CONNEXION.md](NativeApp/CONNEXION.md).
+Connecte ensuite tes fournisseurs : [NativeApp/CONNEXION.md](NativeApp/CONNEXION.md).
 
-## Tests
+## Limites connues
 
-```sh
-swift test --package-path NativeApp
-```
-
-Les tests utilisent des fixtures synthétiques et des clés créées à l'exécution. Ils ne font aucun appel réseau.
-
-## App iPhone
-
-[iOSApp/](iOSApp/README.md) est un client SwiftUI qui partage le module `GameMetrikCore`. Il reçoit ses connexions du Mac par un fichier de transfert chiffré et de courte durée. Renseigne ta propre équipe Apple avant de compiler pour un appareil.
-
-## Sécurité et confidentialité
-
-- Les identifiants restent dans le trousseau de ton appareil, protégés par Touch ID, Face ID ou ton mot de passe. Ils ne sont jamais écrits dans le paquet de l'app, les préférences ou les journaux.
-- L'app démarre verrouillée, et se verrouille à la veille, au verrouillage de l'écran et après cinq minutes sans activité.
-- L'app tourne dans l'App Sandbox avec le Hardened Runtime. Son seul trafic réseau va vers les fournisseurs que tu connectes.
-- Les parties brutes et les profils des joueurs restent en mémoire. Le cache sur disque ne contient que des agrégats, chiffrés en AES-256-GCM.
-
-Le détail est dans [NativeApp/SECURITE.md](NativeApp/SECURITE.md). Pour signaler une faille, voir [SECURITY.md](SECURITY.md).
+- Les parties génériques fonctionnent pour tout studio : App Store Connect, Google Play, AdMob et un catalogue de jeux dans Firestore.
+- Les rapports de parcours, de monétisation, d'activité en direct et de Ballpark appellent des fonctions d'analyse qui
+  n'existent que dans les projets Supabase de l'auteur. Ailleurs, ce sont des exemples complets d'un contrat de rapport,
+  de sa validation et de son affichage.
+- L'interface n'existe qu'en français.
+- Les clés que tu importes gardent leurs droits chez le fournisseur. L'app ne fait que lire, mais elle ne transforme pas
+  une clé d'administration en clé de lecture seule.
 
 ## Organisation
 
@@ -81,9 +116,10 @@ Le détail est dans [NativeApp/SECURITE.md](NativeApp/SECURITE.md). Pour signale
 | `NativeApp/Sources/GameMetrikNative` | L'app macOS : vues SwiftUI, état de l'app, coffre du trousseau. |
 | `NativeApp/Tests` | Tests unitaires et d'intégration sur fixtures synthétiques. |
 | `NativeApp/scripts` | Scripts de compilation, de paquet et de notarisation. |
-| `iOSApp` | Le client iPhone. |
+| `iOSApp` | Le client iPhone. Voir [iOSApp/README.md](iOSApp/README.md). |
 
-`NativeApp` ne dépend que des SDK Apple : ni Node, ni vue web, ni serveur local.
+Détail de la sécurité : [NativeApp/SECURITE.md](NativeApp/SECURITE.md). Pour signaler une faille, voir
+[SECURITY.md](SECURITY.md). Pour contribuer, voir [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licence
 
