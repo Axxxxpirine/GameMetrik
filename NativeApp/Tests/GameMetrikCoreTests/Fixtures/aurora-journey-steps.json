@@ -1,0 +1,54 @@
+{
+  "contract_version": 1,
+  "report": "steps",
+  "generated_at": "2026-10-13T10:00:00.123456+00:00",
+  "as_of": "2026-10-13T10:00:00.123456+00:00",
+  "timezone": "Europe/Zurich",
+  "filters": {
+    "from_day": "2026-10-01",
+    "to_day_exclusive": "2026-10-07",
+    "app_version": null
+  },
+  "coverage": {
+    "steps_first_day": "2026-10-01",
+    "grace_days": 3,
+    "identifier": "none",
+    "region_rule": "storefront outside the EEA and the United Kingdom unless turned off; inside them, or unknown, only with the usage-statistics consent",
+    "cohort_definition": "anonymous new installations whose steps may be reported (steps_open), dated by the Zurich day of their first launch"
+  },
+  "rows": [
+    {
+      "cohort_day": "2026-10-01", "app_version": "1.5.0", "first_launches": 9, "steps_open": 0,
+      "measured_share": {"numerator": 0, "denominator": 9, "value": 0.0},
+      "tutorial_started": {"numerator": 0, "denominator": 0, "value": null, "reason": "not_collected"},
+      "tutorial_completed": {"numerator": 0, "denominator": 0, "value": null, "reason": "not_collected"},
+      "solved_1": {"numerator": 0, "denominator": 0, "value": null, "reason": "not_collected"},
+      "solved_3": {"numerator": 0, "denominator": 0, "value": null, "reason": "not_collected"},
+      "solved_10": {"numerator": 0, "denominator": 0, "value": null, "reason": "not_collected"},
+      "return_d1": {"numerator": 0, "denominator": 0, "value": null, "reason": "not_collected"},
+      "return_d7_d13": {"numerator": 0, "denominator": 0, "value": null, "reason": "not_collected"}
+    },
+    {
+      "cohort_day": "2026-10-01", "app_version": "1.5.1", "first_launches": 20, "steps_open": 14,
+      "measured_share": {"numerator": 14, "denominator": 20, "value": 0.7000},
+      "tutorial_started": {"numerator": 13, "denominator": 14, "value": 0.9286},
+      "tutorial_completed": {"numerator": 11, "denominator": 14, "value": 0.7857},
+      "solved_1": {"numerator": 10, "denominator": 14, "value": 0.7143},
+      "solved_3": {"numerator": 7, "denominator": 14, "value": 0.5000},
+      "solved_10": {"numerator": 3, "denominator": 14, "value": 0.2143},
+      "return_d1": {"numerator": 6, "denominator": 14, "value": 0.4286},
+      "return_d7_d13": {"numerator": null, "denominator": null, "value": null, "reason": "immature_cohort"}
+    },
+    {
+      "cohort_day": "2026-10-06", "app_version": "1.5.1", "first_launches": 10, "steps_open": 8,
+      "measured_share": {"numerator": 8, "denominator": 10, "value": 0.8000},
+      "tutorial_started": {"numerator": null, "denominator": null, "value": null, "reason": "immature_cohort"},
+      "tutorial_completed": {"numerator": null, "denominator": null, "value": null, "reason": "immature_cohort"},
+      "solved_1": {"numerator": null, "denominator": null, "value": null, "reason": "immature_cohort"},
+      "solved_3": {"numerator": null, "denominator": null, "value": null, "reason": "immature_cohort"},
+      "solved_10": {"numerator": null, "denominator": null, "value": null, "reason": "immature_cohort"},
+      "return_d1": {"numerator": 3, "denominator": 8, "value": 0.3750},
+      "return_d7_d13": {"numerator": null, "denominator": null, "value": null, "reason": "immature_cohort"}
+    }
+  ]
+}

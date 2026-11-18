@@ -1,0 +1,43 @@
+{
+  "contract_version": 1,
+  "report": "overview",
+  "generated_at": "2026-09-21T10:00:00Z",
+  "as_of": "2026-09-21T09:59:59Z",
+  "timezone": "Europe/Zurich",
+  "day_basis": "civil",
+  "filters": {
+    "from_day": "2026-09-19",
+    "to_day_exclusive": "2026-09-21",
+    "mode": "all",
+    "locale": "all",
+    "app_version": null,
+    "include_test_accounts": false
+  },
+  "coverage": {
+    "v2_available_from": "2026-08-01T00:00:00Z",
+    "excluded_test_accounts": 2,
+    "participants_eligible": 12,
+    "participants_measured": 10,
+    "events_rejected_known": { "value": 1, "reason": null },
+    "events_lost_known": { "value": null, "reason": "not_instrumented" },
+    "complete_duration": { "numerator": 8, "denominator": 10, "value": 0.8, "reason": null },
+    "v1_events": 3,
+    "v2_events": 42,
+    "observed_through": "2026-09-21T09:55:00Z",
+    "warnings": ["v1_partial_coverage", "partial_duration_coverage"]
+  },
+  "rows": [{
+    "day": "2026-09-20",
+    "opened_accounts": 8,
+    "played_accounts": 7,
+    "completed_accounts": 5,
+    "sessions_observed": 11,
+    "first_activities_observed": 1,
+    "participations_assigned": 12,
+    "participations_started": 10,
+    "participations_completed": 6,
+    "participations_expired_incomplete": 1,
+    "participations_open_incomplete": 3
+  }],
+  "next_cursor": null
+}

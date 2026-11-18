@@ -1,0 +1,86 @@
+{
+  "contract_version": 1,
+  "report": "runs",
+  "generated_at": "2026-10-02T13:50:05.567638+00:00",
+  "as_of": "2026-10-02T13:50:05.567638+00:00",
+  "timezone": "Europe/Zurich",
+  "filters": {
+    "from_day": "2026-09-10",
+    "to_day_exclusive": "2026-09-20",
+    "app_version": "1.5.0",
+    "population": "all"
+  },
+  "coverage": {
+    "collection_first_received_at": "2026-09-10T08:00:00.123456+00:00",
+    "archived_days_in_window": 0,
+    "grace_days": 3,
+    "consent_required": true,
+    "attribution": "not_collected",
+    "cohort_definition": "first_open with install_status = new_install and observed_from_launch = true, minus suspicious installations and known accounts",
+    "first_open_in_window": {
+      "new_install": 3,
+      "new_install_late_consent": 1,
+      "new_install_known_account": 1,
+      "excluded_suspicious": 1,
+      "existing_player": 1,
+      "unknown": 0
+    },
+    "anonymous_in_window": {
+      "first_launch_new_install": 6,
+      "first_launch_existing_player": 0,
+      "consent_accepted": 4,
+      "consent_declined": 1
+    },
+    "rejections_in_window": {}
+  },
+  "rows": [
+    {
+      "app_version": "1.5.0",
+      "mode": "campaign",
+      "level": 1,
+      "games": 2,
+      "start_observed": 2,
+      "solved": 1,
+      "abandoned_restart": 0,
+      "abandoned_new_puzzle": 0,
+      "open_recent": 0,
+      "left_not_resumed": 0,
+      "app_stopped_while_playing": 0,
+      "left_app_returned": 0,
+      "left_app_not_returned": 1,
+      "no_end_observed": 0
+    },
+    {
+      "app_version": "1.5.0",
+      "mode": "campaign",
+      "level": 2,
+      "games": 1,
+      "start_observed": 0,
+      "solved": 1,
+      "abandoned_restart": 0,
+      "abandoned_new_puzzle": 0,
+      "open_recent": 0,
+      "left_not_resumed": 0,
+      "app_stopped_while_playing": 0,
+      "left_app_returned": 0,
+      "left_app_not_returned": 0,
+      "no_end_observed": 0
+    },
+    {
+      "app_version": "1.5.0",
+      "mode": "quick",
+      "level": 0,
+      "games": 3,
+      "start_observed": 2,
+      "solved": 1,
+      "abandoned_restart": 1,
+      "abandoned_new_puzzle": 0,
+      "open_recent": 0,
+      "left_not_resumed": 0,
+      "app_stopped_while_playing": 1,
+      "left_app_returned": 0,
+      "left_app_not_returned": 0,
+      "no_end_observed": 0
+    }
+  ]
+}

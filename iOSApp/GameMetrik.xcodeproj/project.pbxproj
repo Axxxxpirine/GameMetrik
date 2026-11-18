@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A5BADA35FCD8FCB1AEE4F9B /* BallparkAnalyticsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8B1AD990002337822A50A /* BallparkAnalyticsData.swift */; };
+		45E30B60B68DAD9C7EE60A72 /* MobileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CCE67BE7AB60BE4B714240 /* MobileStore.swift */; };
+		5FACF2FEEA67C5E1B62DF617 /* BallparkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898D8931CC8C4A04F6C4050 /* BallparkScreen.swift */; };
+		604F094CEEF7FE9BE098E89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617F08F98786F5996F40ACBC /* Assets.xcassets */; };
+		6ABA2A12C7C9D8EDB5C0958F /* MobileVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E868A4E796CBD688A1625F /* MobileVault.swift */; };
+		6D3418A755219D9A2076B9F1 /* GameMetrikCore in Frameworks */ = {isa = PBXBuildFile; productRef = 23C07C0D48E0A198E0F9C1ED /* GameMetrikCore */; };
+		7389D57707CA7270A759C343 /* GameMetrikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529532980802668ABDD735A0 /* GameMetrikApp.swift */; };
+		7FB35C892E8D51926C3FEEB1 /* BallparkReportsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110D2A32001845A0BD9CACD /* BallparkReportsViews.swift */; };
+		822D4F2465D6476C19CC08EA /* MobileStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A936693DDB5EE7AE0B514 /* MobileStoreTests.swift */; };
+		979A2D465B05AFD4029D4BDA /* GamesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22423A1313276DF524ED02D5 /* GamesScreen.swift */; };
+		AA14AB6D1C236E1A1A087C39 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A0097AA7F564AAF08E1813 /* DashboardScreen.swift */; };
+		D436E73F3DC9D6329B7E7410 /* ConnectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDD9E0CDC9F117AF56FDC6 /* ConnectionScreen.swift */; };
+		F6D93B35FE8A62801D329F36 /* MobileFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4576677EA31FA15A6ED83C /* MobileFlowTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B4E57D525EB1EC138DC6FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B68ED0B9CC47780933C6234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21CB1AF18EE560E84F3F332;
+			remoteInfo = GameMetrik;
+		};
+		A7CC0C2DD68ED83237D0E7CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B68ED0B9CC47780933C6234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21CB1AF18EE560E84F3F332;
+			remoteInfo = GameMetrik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08CCE67BE7AB60BE4B714240 /* MobileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileStore.swift; sourceTree = "<group>"; };
+		10E868A4E796CBD688A1625F /* MobileVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileVault.swift; sourceTree = "<group>"; };
+		17F8B1AD990002337822A50A /* BallparkAnalyticsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallparkAnalyticsData.swift; sourceTree = "<group>"; };
+		22423A1313276DF524ED02D5 /* GamesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesScreen.swift; sourceTree = "<group>"; };
+		309D6C44963DADEFB90C5481 /* GameMetrikTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GameMetrikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEDD9E0CDC9F117AF56FDC6 /* ConnectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionScreen.swift; sourceTree = "<group>"; };
+		44D49C67CE5ABB049285E99A /* GameMetrik.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GameMetrik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		529532980802668ABDD735A0 /* GameMetrikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMetrikApp.swift; sourceTree = "<group>"; };
+		617F08F98786F5996F40ACBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D4576677EA31FA15A6ED83C /* MobileFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileFlowTests.swift; sourceTree = "<group>"; };
+		7110D2A32001845A0BD9CACD /* BallparkReportsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallparkReportsViews.swift; sourceTree = "<group>"; };
+		7794BB2A6EBAE634A75E14C2 /* NativeApp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NativeApp; path = ../NativeApp; sourceTree = SOURCE_ROOT; };
+		8898D8931CC8C4A04F6C4050 /* BallparkScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallparkScreen.swift; sourceTree = "<group>"; };
+		9B5A936693DDB5EE7AE0B514 /* MobileStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileStoreTests.swift; sourceTree = "<group>"; };
+		C3A0097AA7F564AAF08E1813 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		DB5CDEBB0F0B6031BB83A416 /* GameMetrikUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GameMetrikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E29AB7DB5DD2E4CBB485C31F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3418A755219D9A2076B9F1 /* GameMetrikCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		154F2990E69FFA07653FEF36 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				17F8B1AD990002337822A50A /* BallparkAnalyticsData.swift */,
+				7110D2A32001845A0BD9CACD /* BallparkReportsViews.swift */,
+				8898D8931CC8C4A04F6C4050 /* BallparkScreen.swift */,
+				3CEDD9E0CDC9F117AF56FDC6 /* ConnectionScreen.swift */,
+				C3A0097AA7F564AAF08E1813 /* DashboardScreen.swift */,
+				529532980802668ABDD735A0 /* GameMetrikApp.swift */,
+				22423A1313276DF524ED02D5 /* GamesScreen.swift */,
+				08CCE67BE7AB60BE4B714240 /* MobileStore.swift */,
+				10E868A4E796CBD688A1625F /* MobileVault.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3EF3988BEB0EC0A89D5F9E3D = {
+			isa = PBXGroup;
+			children = (
+				6A77B34F47A0D0397C6CE59E /* Packages */,
+				68AF25ACD5ECA3A24A00946C /* Resources */,
+				154F2990E69FFA07653FEF36 /* Sources */,
+				A4EDB745864754387AAD5ABC /* Tests */,
+				913BC53F41C2E145060E4F28 /* UITests */,
+				59C9C784A1C7B083B008EB75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59C9C784A1C7B083B008EB75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D49C67CE5ABB049285E99A /* GameMetrik.app */,
+				309D6C44963DADEFB90C5481 /* GameMetrikTests.xctest */,
+				DB5CDEBB0F0B6031BB83A416 /* GameMetrikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68AF25ACD5ECA3A24A00946C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				617F08F98786F5996F40ACBC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6A77B34F47A0D0397C6CE59E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7794BB2A6EBAE634A75E14C2 /* NativeApp */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		913BC53F41C2E145060E4F28 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D4576677EA31FA15A6ED83C /* MobileFlowTests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		A4EDB745864754387AAD5ABC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9B5A936693DDB5EE7AE0B514 /* MobileStoreTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AC4EB7C25ABD9FE9E1BDDF9 /* GameMetrikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4795D4F1A5664C68D84EB9 /* Build configuration list for PBXNativeTarget "GameMetrikTests" */;
+			buildPhases = (
+				ED10DE36B1C71780CA09464C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38966B6EB8097261ABE81875 /* PBXTargetDependency */,
+			);
+			name = GameMetrikTests;
+			packageProductDependencies = (
+			);
+			productName = GameMetrikTests;
+			productReference = 309D6C44963DADEFB90C5481 /* GameMetrikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5FA6BC1765FE48EEFAD904A /* GameMetrikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F021BF1D86D23A837F052DCE /* Build configuration list for PBXNativeTarget "GameMetrikUITests" */;
+			buildPhases = (
+				A245D04CE4FB9F419BCE14E2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E43CE6C7D2C043E69B6C3654 /* PBXTargetDependency */,
+			);
+			name = GameMetrikUITests;
+			packageProductDependencies = (
+			);
+			productName = GameMetrikUITests;
+			productReference = DB5CDEBB0F0B6031BB83A416 /* GameMetrikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D21CB1AF18EE560E84F3F332 /* GameMetrik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8CBA26BAF9E9AC7919305DB /* Build configuration list for PBXNativeTarget "GameMetrik" */;
+			buildPhases = (
+				18E2D96F7E98EF5FE41C7E13 /* Sources */,
+				BDBDA82906F557069E2A6B89 /* Resources */,
+				E29AB7DB5DD2E4CBB485C31F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameMetrik;
+			packageProductDependencies = (
+				23C07C0D48E0A198E0F9C1ED /* GameMetrikCore */,
+			);
+			productName = GameMetrik;
+			productReference = 44D49C67CE5ABB049285E99A /* GameMetrik.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B68ED0B9CC47780933C6234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9AC4EB7C25ABD9FE9E1BDDF9 = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					B5FA6BC1765FE48EEFAD904A = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D21CB1AF18EE560E84F3F332;
+					};
+					D21CB1AF18EE560E84F3F332 = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 327F03EFEA0018EFBDE5C22A /* Build configuration list for PBXProject "GameMetrik" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3EF3988BEB0EC0A89D5F9E3D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2C7DE9B5F39808E1CFA4B8FB /* XCLocalSwiftPackageReference "../NativeApp" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 59C9C784A1C7B083B008EB75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D21CB1AF18EE560E84F3F332 /* GameMetrik */,
+				9AC4EB7C25ABD9FE9E1BDDF9 /* GameMetrikTests */,
+				B5FA6BC1765FE48EEFAD904A /* GameMetrikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDBDA82906F557069E2A6B89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604F094CEEF7FE9BE098E89F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E2D96F7E98EF5FE41C7E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5BADA35FCD8FCB1AEE4F9B /* BallparkAnalyticsData.swift in Sources */,
+				7FB35C892E8D51926C3FEEB1 /* BallparkReportsViews.swift in Sources */,
+				5FACF2FEEA67C5E1B62DF617 /* BallparkScreen.swift in Sources */,
+				D436E73F3DC9D6329B7E7410 /* ConnectionScreen.swift in Sources */,
+				AA14AB6D1C236E1A1A087C39 /* DashboardScreen.swift in Sources */,
+				7389D57707CA7270A759C343 /* GameMetrikApp.swift in Sources */,
+				979A2D465B05AFD4029D4BDA /* GamesScreen.swift in Sources */,
+				45E30B60B68DAD9C7EE60A72 /* MobileStore.swift in Sources */,
+				6ABA2A12C7C9D8EDB5C0958F /* MobileVault.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A245D04CE4FB9F419BCE14E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D93B35FE8A62801D329F36 /* MobileFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED10DE36B1C71780CA09464C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822D4F2465D6476C19CC08EA /* MobileStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38966B6EB8097261ABE81875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D21CB1AF18EE560E84F3F332 /* GameMetrik */;
+			targetProxy = A7CC0C2DD68ED83237D0E7CF /* PBXContainerItemProxy */;
+		};
+		E43CE6C7D2C043E69B6C3654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D21CB1AF18EE560E84F3F332 /* GameMetrik */;
+			targetProxy = 5B4E57D525EB1EC138DC6FB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E3E50DE24D841DE7409278D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_LANGUAGE = fr;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		566D22F1B6884022A56A2D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_LANGUAGE = fr;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5CC26871421EA47BCA182637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.gamemetrik.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = GameMetrik;
+			};
+			name = Release;
+		};
+		877E8ED4C3CA40BACCBEE844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.gamemetrik.ios;
+				PRODUCT_NAME = GameMetrik;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B522EB673C083A4D8FDE3036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.gamemetrik.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = GameMetrik;
+			};
+			name = Debug;
+		};
+		C054A376880C357F5529F345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.gamemetrik.ios;
+				PRODUCT_NAME = GameMetrik;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CD573FD250BAA4178C3B4C8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.gamemetrik.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameMetrik.app/GameMetrik";
+			};
+			name = Debug;
+		};
+		DD89CB850F9B10CA5FC1027F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.gamemetrik.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameMetrik.app/GameMetrik";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327F03EFEA0018EFBDE5C22A /* Build configuration list for PBXProject "GameMetrik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566D22F1B6884022A56A2D6F /* Debug */,
+				2E3E50DE24D841DE7409278D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9A4795D4F1A5664C68D84EB9 /* Build configuration list for PBXNativeTarget "GameMetrikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD573FD250BAA4178C3B4C8E /* Debug */,
+				DD89CB850F9B10CA5FC1027F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B8CBA26BAF9E9AC7919305DB /* Build configuration list for PBXNativeTarget "GameMetrik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C054A376880C357F5529F345 /* Debug */,
+				877E8ED4C3CA40BACCBEE844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F021BF1D86D23A837F052DCE /* Build configuration list for PBXNativeTarget "GameMetrikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B522EB673C083A4D8FDE3036 /* Debug */,
+				5CC26871421EA47BCA182637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		2C7DE9B5F39808E1CFA4B8FB /* XCLocalSwiftPackageReference "../NativeApp" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../NativeApp;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23C07C0D48E0A198E0F9C1ED /* GameMetrikCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GameMetrikCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1B68ED0B9CC47780933C6234 /* Project object */;
+}

@@ -1,0 +1,44 @@
+{
+    "rows": [
+        {
+            "day": "2026-10-18",
+            "closes": 1,
+            "dialog": "the_grove_s_rules",
+            "screens": {
+                "grid": 1
+            },
+            "seconds": 6,
+            "outcomes": {
+                "decline": 1
+            },
+            "suppressed": false,
+            "app_version": "9.9.9",
+            "installations": 1,
+            "median_seconds": 6.0
+        }
+    ],
+    "as_of": "2026-10-18T02:52:10.269615+00:00",
+    "report": "dialogs",
+    "filters": {
+        "from_day": "2026-10-17",
+        "population": "all",
+        "app_version": null,
+        "to_day_exclusive": "2026-10-19"
+    },
+    "coverage": {
+        "collection": "usage_data_setting_extended",
+        "attribution": "not_collected",
+        "collection_rule": "sent by 1.6.0+ installations whose statistics are allowed for the extended purposes: on by default where the App Store storefront is known and outside the EEA and the United Kingdom; elsewhere only after an explicit yes given for these purposes (Settings, or the game's purpose in Google's form)",
+        "raw_retention_days": 396,
+        "production_definition": "installations never seen on a TestFlight or development build",
+        "small_group_threshold": 5,
+        "small_groups_masked_in": "archived_days_only",
+        "archived_days_in_window": 0,
+        "installations_are_people": false,
+        "collection_first_received_at": "2026-10-18T02:51:44.67935+00:00",
+        "archive_available_for_population": true
+    },
+    "timezone": "Europe/Zurich",
+    "generated_at": "2026-10-18T02:52:10.269615+00:00",
+    "contract_version": 1
+}

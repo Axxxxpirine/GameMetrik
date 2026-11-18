@@ -1,0 +1,59 @@
+{
+    "rows": [
+        {
+            "day": "2026-10-18",
+            "rejections": {},
+            "core_events": 41,
+            "presence_peak": 1,
+            "events_received": 57,
+            "extended_events": 16,
+            "presence_minutes": 1,
+            "installations_sending": 2
+        }
+    ],
+    "as_of": "2026-10-18T02:52:11.022528+00:00",
+    "report": "server",
+    "filters": {
+        "from_day": "2026-10-17",
+        "population": "all",
+        "app_version": null,
+        "to_day_exclusive": "2026-10-19"
+    },
+    "coverage": {
+        "storage": {
+            "database_bytes": 16993427,
+            "presence_live_rows": 1,
+            "journey_events_bytes": 1187840,
+            "report_archive_bytes": 40960,
+            "presence_minutes_bytes": 32768,
+            "journey_events_rows_estimate": 0
+        },
+        "functions": [
+            {
+                "calls": 6,
+                "mean_ms": 0.1,
+                "function": "forget_journey_installation_v1"
+            },
+            {
+                "calls": 14,
+                "mean_ms": 0.18,
+                "function": "record_anonymous_launch_v1"
+            },
+            {
+                "calls": 29,
+                "mean_ms": 0.71,
+                "function": "record_journey_events_v1"
+            },
+            {
+                "calls": 10,
+                "mean_ms": 0.2,
+                "function": "record_presence_v1"
+            }
+        ],
+        "request_logs": "Supabase keeps its own API and database logs (with IP addresses) under its own retention; they are not read here",
+        "functions_available": true
+    },
+    "timezone": "Europe/Zurich",
+    "generated_at": "2026-10-18T02:52:11.022528+00:00",
+    "contract_version": 1
+}

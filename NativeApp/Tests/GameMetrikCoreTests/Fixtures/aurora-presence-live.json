@@ -1,0 +1,26 @@
+{
+    "rows": [
+        {
+            "state": "app",
+            "players": 1,
+            "game_mode": "none",
+            "app_version": "1.6.0",
+            "distribution": "development"
+        }
+    ],
+    "report": "live",
+    "filters": {},
+    "coverage": {
+        "collection": "usage_data_setting_extended",
+        "population": "foreground installations whose statistics are allowed for the extended purposes (1.6.0+)",
+        "window_seconds": 90,
+        "first_signal_at": "2026-10-18T02:52:00+00:00",
+        "production_definition": "app_store and unknown builds; testflight and development builds are internal",
+        "sampler_minutes_today": 1,
+        "signal_interval_seconds": 30,
+        "players_are_installations": true
+    },
+    "timezone": "Europe/Zurich",
+    "generated_at": "2026-10-18T02:52:11.082857+00:00",
+    "contract_version": 1
+}

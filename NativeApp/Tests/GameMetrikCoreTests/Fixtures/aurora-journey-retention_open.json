@@ -1,0 +1,58 @@
+{
+  "contract_version": 1,
+  "report": "retention_open",
+  "generated_at": "2026-10-02T13:50:05.567638+00:00",
+  "as_of": "2026-10-02T13:50:05.567638+00:00",
+  "timezone": "Europe/Zurich",
+  "filters": {
+    "from_day": "2026-09-10",
+    "to_day_exclusive": "2026-09-11",
+    "app_version": "1.5.0",
+    "population": "all"
+  },
+  "coverage": {
+    "collection_first_received_at": "2026-09-10T08:00:00.123456+00:00",
+    "archived_days_in_window": 0,
+    "grace_days": 3,
+    "consent_required": true,
+    "attribution": "not_collected",
+    "cohort_definition": "first_open with install_status = new_install and observed_from_launch = true, minus suspicious installations and known accounts",
+    "first_open_in_window": {
+      "new_install": 3,
+      "new_install_late_consent": 1,
+      "new_install_known_account": 1,
+      "excluded_suspicious": 1,
+      "existing_player": 1,
+      "unknown": 0
+    },
+    "anonymous_in_window": {
+      "first_launch_new_install": 6,
+      "first_launch_existing_player": 0,
+      "consent_accepted": 4,
+      "consent_declined": 1
+    },
+    "rejections_in_window": {}
+  },
+  "rows": [
+    {
+      "cohort_day": "2026-09-10",
+      "app_version": "1.5.0",
+      "cohort_size": 3,
+      "return_d1": {
+        "numerator": 2,
+        "denominator": 3,
+        "value": 0.6667
+      },
+      "return_d7": {
+        "numerator": 1,
+        "denominator": 3,
+        "value": 0.3333
+      },
+      "return_d7_d13": {
+        "numerator": 1,
+        "denominator": 3,
+        "value": 0.3333
+      }
+    }
+  ]
+}

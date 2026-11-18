@@ -1,0 +1,97 @@
+{
+  "contract_version": 1,
+  "report": "quality",
+  "generated_at": "2026-10-02T13:50:05.567638+00:00",
+  "as_of": "2026-10-02T13:50:05.567638+00:00",
+  "timezone": "Europe/Zurich",
+  "filters": {
+    "from_day": "2026-09-10",
+    "to_day_exclusive": "2026-09-13",
+    "app_version": "1.5.0",
+    "population": "all"
+  },
+  "coverage": {
+    "collection_first_received_at": "2026-09-10T08:00:00.123456+00:00",
+    "archived_days_in_window": 0,
+    "grace_days": 3,
+    "consent_required": true,
+    "attribution": "not_collected",
+    "cohort_definition": "first_open with install_status = new_install and observed_from_launch = true, minus suspicious installations and known accounts",
+    "first_open_in_window": {
+      "new_install": 3,
+      "new_install_late_consent": 1,
+      "new_install_known_account": 1,
+      "excluded_suspicious": 1,
+      "existing_player": 1,
+      "unknown": 0
+    },
+    "anonymous_in_window": {
+      "first_launch_new_install": 6,
+      "first_launch_existing_player": 0,
+      "consent_accepted": 4,
+      "consent_declined": 1
+    },
+    "rejections_in_window": {}
+  },
+  "rows": [
+    {
+      "day": "2026-09-10",
+      "app_version": "1.5.0",
+      "platform": "ios",
+      "installations": 7,
+      "events": 20,
+      "by_event": {
+        "first_open": 7,
+        "app_opened": 3,
+        "tutorial_started": 2,
+        "run_started": 4,
+        "tutorial_completed": 1,
+        "run_completed": 1,
+        "run_exited": 2
+      },
+      "first_open_new_install": 6,
+      "first_open_existing_player": 1,
+      "first_open_unknown": 0,
+      "first_open_late_consent": 1,
+      "installations_reporting_losses": 1,
+      "lost_events_reported": 3,
+      "launches_after_foreground_stop": 0
+    },
+    {
+      "day": "2026-09-11",
+      "app_version": "1.5.0",
+      "platform": "ios",
+      "installations": 4,
+      "events": 5,
+      "by_event": {
+        "app_opened": 2,
+        "app_backgrounded": 1,
+        "run_completed": 2
+      },
+      "first_open_new_install": 0,
+      "first_open_existing_player": 0,
+      "first_open_unknown": 0,
+      "first_open_late_consent": 0,
+      "installations_reporting_losses": 0,
+      "lost_events_reported": 0,
+      "launches_after_foreground_stop": 0
+    },
+    {
+      "day": "2026-09-12",
+      "app_version": "1.5.0",
+      "platform": "ios",
+      "installations": 1,
+      "events": 1,
+      "by_event": {
+        "app_opened": 1
+      },
+      "first_open_new_install": 0,
+      "first_open_existing_player": 0,
+      "first_open_unknown": 0,
+      "first_open_late_consent": 0,
+      "installations_reporting_losses": 0,
+      "lost_events_reported": 0,
+      "launches_after_foreground_stop": 1
+    }
+  ]
+}

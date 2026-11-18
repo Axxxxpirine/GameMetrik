@@ -1,0 +1,30 @@
+{
+    "rows": [
+        {
+            "hour": "2026-10-18T04:00:00",
+            "avg_in_app": 0.0,
+            "avg_on_grid": 0.0,
+            "peak_in_app": 0,
+            "peak_on_grid": 0,
+            "minutes_observed": 1
+        }
+    ],
+    "report": "hourly",
+    "filters": {
+        "from_day": "2026-10-17",
+        "to_day_exclusive": "2026-10-19"
+    },
+    "coverage": {
+        "collection": "usage_data_setting_extended",
+        "population": "foreground installations whose statistics are allowed for the extended purposes (1.6.0+)",
+        "window_seconds": 90,
+        "first_signal_at": "2026-10-18T02:52:00+00:00",
+        "production_definition": "app_store and unknown builds; testflight and development builds are internal",
+        "sampler_minutes_today": 1,
+        "signal_interval_seconds": 30,
+        "players_are_installations": true
+    },
+    "timezone": "Europe/Zurich",
+    "generated_at": "2026-10-18T02:52:11.210319+00:00",
+    "contract_version": 1
+}

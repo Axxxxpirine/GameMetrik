@@ -1,0 +1,135 @@
+{
+  "contract_version": 1,
+  "report": "ads",
+  "generated_at": "2026-10-16T09:30:00.123456+00:00",
+  "as_of": "2026-10-16T09:30:00.123456+00:00",
+  "timezone": "Europe/Zurich",
+  "filters": {
+    "from_day": "2026-10-14",
+    "to_day_exclusive": "2026-10-16",
+    "app_version": null
+  },
+  "coverage": {
+    "collection_first_received_at": "2026-10-14T07:12:03.481920+00:00",
+    "archived_days_in_window": 0,
+    "grace_days": 3,
+    "collection": "usage_data_setting",
+    "collection_rule": "on by default when the App Store storefront is known and outside the EEA and the United Kingdom; off by default inside them or while the storefront is unknown (Android, editor); an explicit choice in Settings is kept",
+    "consent_signals": "not_fed",
+    "revenue_scope": "consenting_installations_only",
+    "revenue_source": "admob_on_paid",
+    "authoritative_revenue": "admob_reports",
+    "currencies_converted": false,
+    "attribution": "not_collected",
+    "experiment_rows_from_raw_events": true
+  },
+  "rows": [
+    {
+      "day": "2026-10-14",
+      "app_version": "1.5.2",
+      "platform": "ios",
+      "format": "interstitial",
+      "placement": "next",
+      "game_mode": "campaign",
+      "variant": "none",
+      "installations": 12,
+      "opportunities": 40,
+      "decisions": {
+        "show": 14,
+        "frequency": 12,
+        "time_gap": 6,
+        "discovery": 4,
+        "not_ready": 2,
+        "premium": 2
+      },
+      "show_requested": 14,
+      "opened": 13,
+      "impressions": 13,
+      "closed": 12,
+      "display_failed": 1,
+      "rewards_granted": 0,
+      "rewards_not_granted": 0,
+      "paid_events": 13,
+      "revenue": [
+        {
+          "currency": "CHF",
+          "precision": "precise",
+          "value_micros": 41250,
+          "paid_events": 5
+        },
+        {
+          "currency": "EUR",
+          "precision": "estimated",
+          "value_micros": 3000000000,
+          "paid_events": 8
+        }
+      ]
+    },
+    {
+      "day": "2026-10-14",
+      "app_version": "1.5.2",
+      "platform": "ios",
+      "format": "rewarded",
+      "placement": "hint",
+      "game_mode": "campaign",
+      "variant": "none",
+      "installations": 5,
+      "opportunities": 9,
+      "decisions": {
+        "offered": 5,
+        "show": 3,
+        "cancelled": 1
+      },
+      "show_requested": 3,
+      "opened": 3,
+      "impressions": 3,
+      "closed": 3,
+      "display_failed": 0,
+      "rewards_granted": 2,
+      "rewards_not_granted": 1,
+      "paid_events": 3,
+      "revenue": [
+        {
+          "currency": "CHF",
+          "precision": "precise",
+          "value_micros": 30000,
+          "paid_events": 2
+        },
+        {
+          "currency": "CHF",
+          "precision": "unknown",
+          "value_micros": 0,
+          "paid_events": 1
+        }
+      ]
+    },
+    {
+      "day": "2026-10-15",
+      "app_version": "1.5.2",
+      "platform": "android",
+      "format": "interstitial",
+      "placement": "home",
+      "game_mode": "none",
+      "variant": "lp_control",
+      "installations": 2,
+      "opportunities": 0,
+      "decisions": {},
+      "show_requested": 0,
+      "opened": 1,
+      "impressions": 0,
+      "closed": 0,
+      "display_failed": 0,
+      "rewards_granted": 0,
+      "rewards_not_granted": 0,
+      "paid_events": 1,
+      "revenue": [
+        {
+          "currency": "EUR",
+          "precision": "publisher_provided",
+          "value_micros": 18000,
+          "paid_events": 1
+        }
+      ]
+    }
+  ]
+}

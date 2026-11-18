@@ -1,0 +1,114 @@
+{
+  "contract_version": 1,
+  "report": "experiment",
+  "generated_at": "2026-10-16T09:30:00.123456+00:00",
+  "as_of": "2026-10-16T09:30:00.123456+00:00",
+  "timezone": "Europe/Zurich",
+  "filters": {
+    "from_day": "2026-10-01",
+    "to_day_exclusive": "2026-10-16",
+    "app_version": null
+  },
+  "coverage": {
+    "collection_first_received_at": "2026-10-14T07:12:03.481920+00:00",
+    "archived_days_in_window": 0,
+    "grace_days": 3,
+    "collection": "usage_data_setting",
+    "collection_rule": "on by default when the App Store storefront is known and outside the EEA and the United Kingdom; off by default inside them or while the storefront is unknown (Android, editor); an explicit choice in Settings is kept",
+    "consent_signals": "not_fed",
+    "revenue_scope": "consenting_installations_only",
+    "revenue_source": "admob_on_paid",
+    "authoritative_revenue": "admob_reports",
+    "currencies_converted": false,
+    "attribution": "not_collected",
+    "experiment_rows_from_raw_events": true
+  },
+  "rows": [
+    {
+      "cohort_day": "2026-10-01",
+      "experiment": "lightpaths_ads_v1",
+      "variant": "lp_control",
+      "app_version": "1.5.2",
+      "cohort_size": 40,
+      "window": "J0-J6",
+      "mature": true,
+      "return_d1": {
+        "numerator": 18,
+        "denominator": 40,
+        "value": 0.45
+      },
+      "return_d7": {
+        "numerator": 9,
+        "denominator": 40,
+        "value": 0.225
+      },
+      "lightpaths_solved": 131,
+      "interstitial_impressions": 30,
+      "lightpaths_interstitials": 0,
+      "rewarded_impressions": 7,
+      "revenue": [
+        {
+          "currency": "CHF",
+          "value_micros": 128500,
+          "paid_events": 19
+        },
+        {
+          "currency": "EUR",
+          "value_micros": 61000,
+          "paid_events": 9
+        }
+      ]
+    },
+    {
+      "cohort_day": "2026-10-01",
+      "experiment": "lightpaths_ads_v1",
+      "variant": "lp_treatment",
+      "app_version": "1.5.2",
+      "cohort_size": 38,
+      "window": "J0-J6",
+      "mature": true,
+      "return_d1": {
+        "numerator": 16,
+        "denominator": 38,
+        "value": 0.4211
+      },
+      "return_d7": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "immature_cohort"
+      },
+      "lightpaths_solved": 118,
+      "interstitial_impressions": 52,
+      "lightpaths_interstitials": 22,
+      "rewarded_impressions": 0,
+      "revenue": []
+    },
+    {
+      "cohort_day": "2026-10-14",
+      "experiment": "lightpaths_ads_v1",
+      "variant": "lp_treatment",
+      "app_version": "1.5.2",
+      "cohort_size": 11,
+      "window": "J0-J6",
+      "mature": false,
+      "return_d1": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "immature_cohort"
+      },
+      "return_d7": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "immature_cohort"
+      },
+      "lightpaths_solved": null,
+      "interstitial_impressions": null,
+      "lightpaths_interstitials": null,
+      "rewarded_impressions": null,
+      "revenue": null
+    }
+  ]
+}

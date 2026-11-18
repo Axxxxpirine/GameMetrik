@@ -1,0 +1,70 @@
+{
+  "contract_version": 1,
+  "report": "premium",
+  "generated_at": "2026-10-16T09:30:00.123456+00:00",
+  "as_of": "2026-10-16T09:30:00.123456+00:00",
+  "timezone": "Europe/Zurich",
+  "filters": {
+    "from_day": "2026-10-14",
+    "to_day_exclusive": "2026-10-16",
+    "app_version": null
+  },
+  "coverage": {
+    "collection_first_received_at": "2026-10-14T07:12:03.481920+00:00",
+    "archived_days_in_window": 0,
+    "grace_days": 3,
+    "collection": "usage_data_setting",
+    "collection_rule": "on by default when the App Store storefront is known and outside the EEA and the United Kingdom; off by default inside them or while the storefront is unknown (Android, editor); an explicit choice in Settings is kept",
+    "consent_signals": "not_fed",
+    "revenue_scope": "consenting_installations_only",
+    "revenue_source": "admob_on_paid",
+    "authoritative_revenue": "admob_reports",
+    "currencies_converted": false,
+    "attribution": "not_collected",
+    "experiment_rows_from_raw_events": true
+  },
+  "rows": [
+    {
+      "day": "2026-10-14",
+      "app_version": "1.5.2",
+      "platform": "ios",
+      "placement": "home",
+      "installations": 6,
+      "steps": {
+        "offer_viewed": 7,
+        "sign_in_requested": 3,
+        "sign_in_completed": 2,
+        "confirm_viewed": 2,
+        "purchase_started": 2,
+        "purchase_validated": 1,
+        "entitlement_unknown": 1,
+        "account_changed": 1
+      },
+      "installations_by_step": {
+        "offer_viewed": 6,
+        "sign_in_requested": 3,
+        "sign_in_completed": 2,
+        "confirm_viewed": 2,
+        "purchase_started": 2,
+        "purchase_validated": 1,
+        "entitlement_unknown": 1,
+        "account_changed": 1
+      }
+    },
+    {
+      "day": "2026-10-15",
+      "app_version": "1.5.2",
+      "platform": "ios",
+      "placement": "restore",
+      "installations": 1,
+      "steps": {
+        "restore_started": 1,
+        "restore_completed": 1
+      },
+      "installations_by_step": {
+        "restore_started": 1,
+        "restore_completed": 1
+      }
+    }
+  ]
+}
