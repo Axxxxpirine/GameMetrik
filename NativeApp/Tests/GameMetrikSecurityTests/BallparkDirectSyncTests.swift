@@ -36,7 +36,7 @@ private final class BallparkSyncProtocol: URLProtocol, @unchecked Sendable {
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
     override func startLoading() {
-        responseTask = Task {
+        responseTask = Task { @Sendable in
             do {
                 // URLSession may expose the POST body as a stream to URLProtocol.
                 var copy = request

@@ -34,7 +34,7 @@ private final class BallparkURLProtocol: URLProtocol, @unchecked Sendable {
             captured.httpBody = data
         }
         let incoming = captured
-        responseTask = Task {
+        responseTask = Task { @Sendable in
             do {
                 let data = try await BallparkStubStore.shared.response(to: incoming)
                 try Task.checkCancellation()
